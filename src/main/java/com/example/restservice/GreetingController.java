@@ -44,7 +44,7 @@ public class GreetingController {
 				"    </style>\n" +
 				"</head>\n" +
 				"<body>\n" +
-				"    <h1>RESTful Web Service with Spring Boot</h1>\n" +
+				"    <h1>Welcome to your personal greetings app</h1>\n" +
 				"    <form>\n" +
 				"        <label for=\"name\">Enter your name:</label>\n" +
 				"        <input type=\"text\" id=\"name\" name=\"name\">\n" +
