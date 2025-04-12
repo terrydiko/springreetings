@@ -22,5 +22,4 @@ gradle-app.setting
 
 script.sh
 
-# Temporary ignore Docker file
-Dockerfile
+
