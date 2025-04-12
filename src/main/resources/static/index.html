@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to the Greetings APP</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: white;
+            text-align: center;
+        }
+        form {
+            text-align: center;
+        }
+        #greeting {
+            text-align: center;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to your personal greetings app</h1>
+    <form>
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" name="name">
+        <button type="button" onclick="fetchGreeting()">Submit</button>
+    </form>
+    <div id="greeting"></div>
+    <script>
+        function fetchGreeting() {
+            var name = document.getElementById("name").value;
+            fetch("/greeting?name=" + name)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("greeting").textContent = data;
+                });
+        }
+    </script>
+</body>
+
+</html>

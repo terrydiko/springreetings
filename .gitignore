@@ -21,3 +21,6 @@ gradle-app.setting
 .classpath
 
 script.sh
+
+# Temporary ignore Docker file
+Dockerfile
